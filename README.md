@@ -15,7 +15,7 @@ Projeto pagina de login apenas utilizando conceitos básicos do front end,projet
 - HTML 
 - CSS
 
-# Autor
+# Autora
 
 Andressa Almeida de Paula
 https://www.linkedin.com/in/andressa-almeida-de-paula-1892b9164/
