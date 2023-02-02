@@ -1,0 +1,157 @@
+/*------------------------------------
+configuração do body*/
+body{
+    margin: 0;
+}
+body *{
+    box-sizing: border-box;
+}
+
+/*------------------------------------
+configuração do Main login*/
+.mainLogin{
+    width: 100vw;
+    height: 100vh;
+    background:#440A67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------
+configuração do left login*/
+.leftLogin{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.leftLogin >h1{
+    font-size: 3vw;
+    color: #FFE3FE;
+    /*font-family: 'Amatic SC', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;*/
+    font-family: 'Righteous', cursive;
+    
+
+}
+.leftImg{
+    width:35vw ;
+}
+/*------------------------------------
+configuração do right login*/
+.rightLogin{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------
+configuração do card*/
+.cardLogin{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:#93329E;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #B4AEE8;
+}
+
+.cardLogin > h1{
+    color: #FFE3FE;
+    font-weight: 8000;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+}
+
+/*------------------------------------
+configuração do text fild*/
+
+.textFild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: center;
+   margin: 10px 0;
+}
+
+.textFild >input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #FFE3FE;
+    color:#fff;
+    font-size: 12pt;
+    box-shadow:#93329E;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textFild > label{
+    color:#fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.textFild >input::placeholder{
+    color: B4AEE8;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*------------------------------------
+configuração do button*/
+.btnLogin{
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:3px ;
+    color: #440A67;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #B4AEE8;
+}
+
+@media only screen and(max-width:950px){
+    .cardLogin{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .mainLogin{
+       flex-direction: column;
+    }
+    .leftLogin > h1{
+        display: none;
+    }
+    .leftLogin{
+        width: 100%;
+        height: auto;
+    }
+    .leftImg{
+        width: 35vw;
+    }
+    .rightLogin{
+        width: 100%;
+        height: auto;
+    }
+    .cardLogin{
+        width: 90%;
+    }
+}
+
